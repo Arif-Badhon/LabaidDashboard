@@ -29,7 +29,12 @@ app = dash.Dash(__name__)
 # Define the app
 app.layout = html.Div(children=[
     html.Div(className='row', #define row elements
-        children=[html.Div(className='four columns div-user-controls'),
+        children=[html.Div(className='four columns div-user-controls',
+            children=[
+                html.H2("Labaid Data Dashboard"),
+                html.P("Please Select From Dropdown to View that Dashboard")
+            ]
+        ),
                 html.Div(className='eight columns div-for-charts bg-grey')
         ]
     )
