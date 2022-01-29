@@ -32,9 +32,22 @@ app.layout = html.Div(children=[
         children=[html.Div(className='four columns div-user-controls',
             children=[
                 html.H2("Labaid Data Dashboard"),
-                html.P("Please Select From Dropdown to View that Dashboard")
-            ]
-        ),
+                html.P("Please Select From Dropdown to View that Dashboard"),
+                html.Div(
+                    className='div-for-dropdown',
+                    children=[
+                        dcc.Dropdown(
+                            id='ListDashboard',
+                            options=["Company Dashboard", "Region Dashboard", "Category Dashboard", "Product Dashboard"],
+                            multi=False,
+                            style={'backgroundColor': '#1E1E1E'},
+                            className='stockselector'
+                        ),
+
+                    ],
+                    style={'color': '#1E1E1E'})
+                ]
+            ),
                 html.Div(className='eight columns div-for-charts bg-grey')
         ]
     )
