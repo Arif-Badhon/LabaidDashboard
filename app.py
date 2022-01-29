@@ -124,6 +124,7 @@ def graph(ListDashboard):
             position=1  # specifying the position of the axis
         ),
     )
+    #fig.update_layout(title_text="Company Dashboard", style={'textAlign':'center'})
     return fig
 
 # Run the app
