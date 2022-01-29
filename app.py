@@ -49,7 +49,11 @@ app.layout = html.Div(children=[
                     style={'color': '#1E1E1E'})
                 ]
             ),
-                html.Div(className='eight columns div-for-charts bg-grey')
+                html.Div(className='eight columns div-for-charts bg-grey',
+                    children=[
+                        html.H2("Here you will get the visualization", style={'textAlign':'center'})
+                    ]
+                )
         ]
     )
 ]
