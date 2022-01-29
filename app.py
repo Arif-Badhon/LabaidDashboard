@@ -2,6 +2,7 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from matplotlib.pyplot import title
 import pymongo
 import pandas as pd
 from dash.dependencies import Input, Output, State
@@ -24,7 +25,7 @@ collection = pd.DataFrame(collection)
 collection.drop('_id', inplace=True, axis=1)
 
 # Initialise the app
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="Internal Business profile Dashboard")
 
 # Define the app
 app.layout = html.Div(children=[
