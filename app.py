@@ -32,8 +32,9 @@ app.layout = html.Div(children=[
     html.Div(className='row', #define row elements
         children=[html.Div(className='four columns div-user-controls',
             children=[
-                html.H2("Labaid Data Dashboard"),
-                html.P("Please Select From Dropdown to View that Dashboard"),
+                html.H2("Labaid Group"),
+                html.H3("Internal Business Dashboard"),
+                html.P("Please Select From Dropdown to select Dashboard"),
                 html.Div(
                     className='div-for-dropdown',
                     children=[
